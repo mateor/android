@@ -256,7 +256,7 @@
   </project>
   <project path="prebuilt" name="platform/prebuilt" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />  
   <project path="vendor/bn" name="nemith/proprietary_vendor_bn" revision="ics" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+  <project path="vendor/cm" name="mateor/android_vendor_cm" revision="ics" />
   <project path="vendor/pa" name="mateor/android_vendor_pa" />
   <project path="vendor/qcom/opensource/omx/mm-audio" name="CyanogenMod/android_vendor_qcom_opensource_omx_mm-audio" />
   <project path="vendor/qcom/opensource/omx/mm-core" name="CyanogenMod/android_vendor_qcom_opensource_omx_mm-core" />
