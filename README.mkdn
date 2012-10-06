@@ -1,12 +1,26 @@
-Getting Started
----------------
+These instructions are for 64 bit Linux environments, try VirtualBox if you don't use Linux normally.
 
+Take 15 minutes and follow the beginning of this guide. if you don't have ADB set-up, it
+will take longer, but that is just for downloading the SDK. 
 
-To initialize your local repository using the ParanoidAndroid trees, use a command like this:
+When it gets to the step to intialize the repo (repo init -u ETC.) STOP, and come back
+here, You are done with that guide, forever. Those steps only need to be done once.
 
-    repo init -u git://github.com/ParanoidAndroid/android.git -b ics
+Once you have the dependencies satisfied, this is all you need to do.
 
-Then to sync up:
+	$ repo init -u git://github.com/mateor/android.git -b ics
+	$ repo sync
+	$ . build/envsetup.sh
+	$ lunch
 
-    repo sync
+Choose pa_encore_userdebug. It will the last on the list. Just enter the corresponding
+number (44 for me).
 
+	$ make bacon
+
+You're done! When it is done compiling, your ROM will be waiting for you at 
+~/android/system/pa/out/target/product/encore.
+
+Fat-tire says this makes you an Android ninja, so you know it must be true. That means 
+that if you don't try, you are admitting you don't want to be a ninja. Which reveals you 
+to be the geek you already are but with loser rubbed all over you.
