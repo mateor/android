@@ -8,15 +8,15 @@ here, You are done with that guide, forever. Those steps only need to be done on
 
 Once you have the dependencies satisfied, this is all you need to do.
 
-	$ repo init -u git://github.com/mateor/android.git -b ics
-	$ repo sync
-	$ . build/envsetup.sh
-	$ lunch
+	repo init -u git://github.com/mateor/android.git -b ics
+	repo sync
+	. build/envsetup.sh
+	lunch
 
 Choose pa_encore_userdebug. It will the last on the list. Just enter the corresponding
 number (44 for me).
 
-	$ make bacon
+	make bacon
 
 You're done! When it is done compiling, your ROM will be waiting for you at 
 ~/android/system/pa/out/target/product/encore.
