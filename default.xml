@@ -321,7 +321,6 @@
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
-  <project path="vendor/bn" name="eyeballer/proprietary_vendor_bn" revision="jellybean" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/pa" name="ParanoidAndroid/android_vendor_pa" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
@@ -335,7 +334,7 @@
   <project name="NookieDevs/android_frameworks_native" path="frameworks/native" />
   <project name="NookieDevs/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="jellybean-encore" />
   <project name="keyodi/ti-omap-encore-kernel3" path="kernel/bn/encore" revision="encore-omap3-3" />
-  <project name="eyeballer/proprietary_vendor_bn" path="vendor/bn" remote="gh" revision="jellybean" />
+  <project name="eyeballer/proprietary_vendor_bn" path="vendor/bn" revision="jellybean" />
 
   <project path="paranoid" name="ParanoidAndroid/paranoid">
     <copyfile src="build.sh" dest="rom-build.sh" />
