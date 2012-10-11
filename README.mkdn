@@ -1,39 +1,28 @@
-ParanoidAndroid
-===============
+These instructions are for 64 bit Linux environments, try VirtualBox if you don't use Linux normally.
 
-Submitting Patches
-------------------
-We're open source, and patches are always welcome!
-You can send patches by using these commands:
+Take 15 minutes and follow the beginning of this guide. if you don't have ADB set-up, it
+will take longer, but that is just for downloading the SDK. (which you will actually could skip as it is built with the ROM, but it may just be easier to download, in truth...)
 
-    cd <workspace>
-    repo start <branch> ParanoidAndroid/<project>
-    cd <project>
-    git add -A
-    git commit -a
-    cd <workspace>
-    repo upload ParanoidAndroid/<project>
+This can be done right on top of your ICS sources, if you have them. If you need to revert to ICS you may need to retitle the kernel folder, that's it. But it will save you some space that way.
 
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
+When it gets to the step to intialize the repo (repo init -u ETC.) STOP, and come back
+here, You are done with that guide, forever. Those steps only need to be done once.
 
-If you are going to make extra additions, just repeat steps (Don't repo start again), but instead of git commit -a
-use git commit --amend. Gerrit will recognize it as a new patchset.
+Once you have the dependencies satisfied, this is all you need to do.
 
-To view the status of your and others patches, visit [ParanoidAndroid Code Review](http://review.paranoid-rom.com/)
+	repo init -u git://github.com/mateor/android.git -b jellybean
+	repo sync
+	. build/envsetup.sh
+	lunch
 
+Choose pa_encore_userdebug. It will the last on the list. Just enter the corresponding
+number (87 for me).
 
-Getting Started
----------------
+	make bacon
 
-To get started with Android/CyanogenMod/ParanoidAndroid, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
+You're done! When it is done compiling, your ROM will be waiting for you at 
+~/android/system/pa/out/target/product/encore.
 
-To initialize your local repository using the ParanoidAndroid trees, use a command like this:
-
-    repo init -u git://github.com/ParanoidAndroid/android.git -b <branch>
-
-Then to sync up:
-
-    repo sync
-
-For information on how to build, check [Here](https://github.com/ParanoidAndroid/paranoid)
+Fat-tire says this makes you an Android ninja, so you know it must be true. That means 
+that if you don't try, you are admitting you don't want to be a ninja. Which reveals you 
+to be the geek you already are but with loser rubbed all over you.
