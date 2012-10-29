@@ -328,7 +328,7 @@
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
 
   <project path="device/bn/encore" name="NookieDevs/android_device_bn_encore" />
-  <project path="kernel/bn/encore" name="steven676/ti-omap-encore-kernel3" revision="encore-omap3-3-dsscomp" />
+  <project path="kernel/bn/encore" name="NookieDevs/ti-omap-encore-kernel3" revision="encore-omap3-3-dsscomp" />
   <project path="vendor/bn" name="eyeballer/proprietary_vendor_bn" revision="jellybean" />
 
   <project path="paranoid" name="ParanoidAndroid/paranoid">
