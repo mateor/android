@@ -1,28 +1,32 @@
-These instructions are for 64 bit Linux environments, try VirtualBox if you don't use Linux normally.
+#Build Instructions
+---------------------------------
+<i>This manifest can also be used to build PA for Android 4.0. Simply substitute </i><code><b>ics</b></code><i> for </i><code><b>jellybean</b></code><i> everywhere it appears.</i>
 
-Take 15 minutes and follow the beginning of this guide. if you don't have ADB set-up, it
-will take longer, but that is just for downloading the SDK. (which you will actually could skip as it is built with the ROM, but it may just be easier to download, in truth...)
+These instructions are meant for 64 bit Linux environments although they will work on OS X as well. You can try VirtualBox if you don't use Linux normally.
 
-This can be done right on top of your ICS sources, if you have them. If you need to revert to ICS you may need to retitle the kernel folder, that's it. But it will save you some space that way.
 
-When it gets to the step to intialize the repo (repo init -u ETC.) STOP, and come back
-here, You are done with that guide, forever. Those steps only need to be done once.
+##Environment Set-up
+*	Take 15 minutes and follow the beginning of [this guide](http://wiki.cyanogenmod.org/wiki/Template:Build_from_source). You can skip downloading the SDK if you wish.
+*	If you need help installing/configuring the JDK, try method #2 [here](http://softwareinabottle.wordpress.com/2011/11/17/install-sun-jdk-6-on-ubuntu-11-10/)
 
-Once you have the dependencies satisfied, this is all you need to do.
+When it gets to the step to intialize the repo (repo init -u ETC.) <b>STOP</b> and come back here.
 
-	repo init -u git://github.com/mateor/android.git -b jellybean
-	repo sync
-	. build/envsetup.sh
-	lunch
+<b>You are done with that guide, forever.</b> Those steps only needed to be done once.
 
-Choose pa_encore_userdebug. It will the last on the list. Just enter the corresponding
-number (87 for me).
+##Sync and Build
 
-	make bacon
+		repo init -u git://github.com/mateor/android.git -b jellybean
+		repo sync
 
-You're done! When it is done compiling, your ROM will be waiting for you at 
-~/android/system/pa/out/target/product/encore.
+<i>and when the source is done downloading</i>:
 
-Fat-tire says this makes you an Android ninja, so you know it must be true. That means 
-that if you don't try, you are admitting you don't want to be a ninja. Which reveals you 
-to be the geek you already are but with loser rubbed all over you.
+		./rom-build.sh encore
+
+<b>You're done!</b> When it is done compiling, your ROM will be waiting for you at 
+$CROOT/out/target/product/encore.
+
+##Future Builds
+Whenever you would like to pull the latest changes, simply repo sync and run the build script again. Consider cleaning your intermediate files and building from scratch every couple weeks or so by running 
+
+		make clobber
+after repo sync.
