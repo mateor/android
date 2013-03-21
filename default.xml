@@ -330,7 +330,7 @@
   <project path="system/vold" name="platform/system/vold" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
-  <project path="vendor/pa" name="ParanoidAndroid/android_vendor_pa" remote="github" revision="jellybean" />
+  <project path="vendor/pa" name="mateor/android_vendor_pa" remote="github" revision="pa-legacy" />
 
   <project path="paranoid" name="ParanoidAndroid/paranoid" remote="github" revision="jellybean" >
     <copyfile src="build.sh" dest="rom-build.sh" />
@@ -342,5 +342,4 @@
   <!-- Nook Color-specific additions -->
   <project path="device/bn/encore" name="NookieDevs/android_device_bn_encore" />
   <project path="kernel/bn/encore" name="NookieDevs/android_kernel_bn_encore" revision="encore-omap3-3" />
-  <project path="vendor/bn" name="eyeballer/proprietary_vendor_bn" revision="jellybean" />
 </manifest>
