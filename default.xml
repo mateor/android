@@ -342,4 +342,6 @@
   <!-- Nook Color-specific additions -->
   <project path="device/bn/encore" name="NookieDevs/android_device_bn_encore" remote="github" revision="cm-10.1" />
   <project path="kernel/bn/encore" name="NookieDevs/android_kernel_bn_encore" remote="github" revision="encore-omap3-3" />
+  <project path="vendor/bn" name="eyeballer/proprietary_vendor_bn" remote="github" revision="jellybean" />$
+
 </manifest>
