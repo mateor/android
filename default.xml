@@ -22,7 +22,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" remote="github" revision="cm-10.1" >
+  <project path="build" name="mateor/android_build" remote="github" revision="pa-4.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
