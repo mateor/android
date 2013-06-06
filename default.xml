@@ -341,12 +341,12 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
-  <project path="system/core" remote="github" name="mateor/system/core" revision="pa-4.2"/>
+  <project path="system/core" remote="github" name="mateor/android_system_core" revision="pa-4.2"/>
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" remote="github" name="mateor/system/vold" revision="pa-4.2"/>
+  <project path="system/vold" remote="github" name="mateor/android_system_vold" revision="pa-4.2"/>
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
 
