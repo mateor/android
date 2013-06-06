@@ -4,13 +4,16 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="github"
+           fetch="https://github.com"
+           revision="aosp-4.2" />
+
   <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="github"
-           fetch="https://github.com"
-           revision="aosp" />
+
 
   <project path="build" name="mateor/android_build" remote="github" revision="pa-4.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
