@@ -1,5 +1,8 @@
 #Build Instructions
 ---------------------------------
+
+**PA has a vendor structure which can serve to obfuscate which repos are actually used in the project. They use a product.adds system that brings in other repos after lunching. I intend to remove that from this project so that a look at the manifest can show exactly what is used to build the rom. But that hasn't been done yet. Look at my android_vendor_pa fork for the products/encore.adds and encore.removes for now.**
+
 <i>This manifest can also be used to build PA for Android 4.0. Simply substitute </i><code><b>ics</b></code><i> for </i><code><b>jellybean</b></code><i> everywhere it appears.</i>
 
 These instructions are meant for 64 bit Linux environments although they will work on OS X as well. You can try VirtualBox if you don't use Linux normally.
