@@ -396,7 +396,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <project path="device/bn/encore" remote="github" name="mateor/android_device_bn_encore" revision="aosp-4.2"/>
+  <project path="device/bn/encore" remote="github" name="mateor/android_device_bn_encore" revision="aosp-4.3"/>
   <project path="kernel/bn/encore" remote="github" name="NookieDevs/android_kernel_bn_encore" revision="encore-omap3-3" />
   <project path="vendor/bn" remote="github" name="mateor/proprietary_vendor_bn" revision="jellybean" />
  <project name="steven676/android_hardware_alsa_sound" path="hardware/alsa_sound" remote="github" revision="jellybean-for-encore" />
