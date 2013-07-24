@@ -48,6 +48,8 @@
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
+  <project name="steven676/android_hardware_alsa_sound" path="hardware/alsa_sound" remote="github" revision="jellybean-for-encore" />
+  <project name="steven676/android_external_alsa-lib" path="external/alsa-lib" remote="github" revision="jellybean" />
   <project path="external/android-clat" name="platform/external/android-clat" />
   <project path="external/android-mock" name="platform/external/android-mock" />
   <project path="external/ant-glob" name="platform/external/ant-glob" />
@@ -217,7 +219,7 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" remote="github" name="CyanogenMod/android_frameworks_av" revision="cm-10.1" />
+  <project path="frameworks/native" remote="github" name="CyanogenMod/android_frameworks_native" revision="cm-10.1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
